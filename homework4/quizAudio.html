@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio & Video</title>
+    </head>
+
+    <body>
+        <h1>Short space quiz</h1>
+
+        <p>After you select your answer, click the next button to go to the next question.</p>
+
+        <h2>By listening the audio track, can you guess who is the person speaking?</h2>
+
+        <audio controls src="resources/Question 2.mp3" type="audio/mpeg"></audio>
+
+        <br/>
+
+        <ol type="A">
+            <li>
+                <input id="answer1" type="radio" name="question2"/>
+                <label for="answer1">Darth Vader</label>
+            </li>
+            <li>
+                <input id="answer2" type="radio" name="question2"/>
+                <label for="answer2">Terminator</label>
+            </li>   
+            <li>
+                <input id="answer3" type="radio"name="question2"/>
+                <label for="answer3">Stephen Hawking</label>
+            </li>        
+            <li>
+                <input id="answer4" type="radio" name="question2"/>
+                <label for="answer4">Michio Kaku</label>
+            </li>
+        </ol>
+        
+        <br/>
+
+        <audio controls src="resources/Question 3.mp3" type="audio/mpeg"></audio>
+
+        <ol type="A">
+            <li>
+                <input id="answer5" type="radio" name="question3"/>
+                <label for="answer5">Elon Musk</label>
+            </li>
+            <li>
+                <input id="answer6" type="radio" name="question3"/>
+                <label for="answer6">Neil deGrass Tyson</label>
+            </li>
+            <li>
+                <input id="answer7" type="radio" name="question3"/>
+                <label for="answer7">Mike Tyson</label>
+            </li>
+            <li>
+                <input id="answer8" type="radio" name="question3"/>
+                <label for="answer8">Eddie Murphy</label>
+            </li>
+        </ol>
+
+        <br/>
+
+        <form action="quizFinish.html">
+            <button type="submit">Finish quiz</button>
+        </form>
+    </body>
+</html>

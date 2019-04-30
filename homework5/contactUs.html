@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Contact us</title>
+    </head>
+
+    <body>
+        <header>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <img src="resources/Logo.png">
+                    </td>
+                    <td>
+                        <a href="home.html">News</a>
+                    </td>
+                    <td>
+                        <a href="gallery.html">Gallery</a>
+                    </td>
+                    <td>
+                        <a href="contactUs.html">Contact Us</a>
+                    </td>
+                </tr>
+            </table>
+
+            <br />
+
+            <div>
+                <a href="home.html">Planets</a>
+                <span> > </span>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+        </header>
+
+        <br />
+
+        <h1>Contact us</h1>
+
+        <p>
+            If you have any questions about anything related to our site, please feel free to ask us with the form below:
+        </p>
+
+        <form action="serverSimulation.html">
+            <div>
+                <label for="name">Your name:</label>
+                <input id="name" name="name" placeholder="Fill your name" required />
+            </div>
+
+            <br />
+
+            <div>
+                <label for="email">Your email:</label>
+                <input id="email" name="email" placeholder="example@gmail.com" required />
+            </div>
+
+            <br />
+
+            <div>
+                <label for="phone">Your phone:</label>
+                <input id="phone" name="phone" placeholder="+3598 *** *** **" required />
+            </div>
+
+            <br />
+            
+            <div>
+                <span>Contact me:</span>
+                <input id="byEmail" type="checkbox" name="byEmail" value="byEmail">
+                <label for="byEmail">By email</label>
+                <input id="byPhone" type="checkbox" value="byPhone">
+                <label for="byPhone">By phone</label>
+            </div>
+            
+            <br />
+
+            <div>
+                <span>Your gender: </span>
+            
+                <span>
+                    <input id="male" type="radio" name="gender" />
+                    <label for="male">Male</label>
+                </span>
+            
+                <span>
+                    <input id="fe" type="radio" name="gender" />
+                    <label for="fe">Female</label>
+                </span>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="reason">Reason for contacing us:</label>
+                <select id="reason" required>
+                    <option>I have a question</option>
+                    <option value>Support</option>
+                    <option value>Password and accont access</option>
+                    <option value>Other</option>
+                </select>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="message">Your message:</span>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <br />
+
+            <input type="submit" value="Submit Query">
+        </form>
+
+    </body>
+
+</html>

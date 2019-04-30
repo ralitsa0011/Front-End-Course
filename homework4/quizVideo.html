@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio & Video</title>
+    </head>
+
+    <body>
+        <h1>Short space quiz</h1>
+
+        <p>After you select your answer, click the next button to go to the next question.</p>
+
+        <h2>By watching the video, can you guess what is the size of the space station?</h2>
+
+        <video src="resources/iss animation.mp4" width="600" poster="resources/iss.jpg" controls></video>
+
+        <br/>
+
+        <ol type="A">
+            <li>
+                <input id="answer1" type="radio" name="question1"/>
+                <label for="answer1">350m X 232m</label>
+            </li>
+            <li>
+                <input id="answer2" type="radio" name="question1"/>
+                <label for="answer2">60m X 24m</label>
+            </li>      
+            <li>
+                <input id="answer3" type="radio" name="question1"/>
+                <label for="answer3">109m X 73m</label>
+            </li>       
+            <li>
+                <input id="answer4" type="radio" name="question1"/>
+                <label for="answer4">206m X 176m</label>
+            </li>
+        </ol>
+
+        <form action="quizAudio.html">
+            <button type="submit">Next question ></button>
+        </form>
+    </body>
+</html>
