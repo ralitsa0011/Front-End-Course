@@ -1,0 +1,32 @@
+body{
+    background-color: #34495e;
+    color:#fff;
+    font-family: "Verdana";
+}
+
+.competitors {
+    width: 100%;
+}
+
+.competitorsInformation{
+    background-color: #e74c3c;
+    width:10px;
+    height: 100px;
+}
+
+.competitorName{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.competitorInformationLabel{
+    font-weight: bold;
+}
+
+.competitorInformationValue{
+    color:#f1c40f;
+}
+
+.emptyColumn{
+    width: 20px;
+}
