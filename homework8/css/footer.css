@@ -1,0 +1,24 @@
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background-color: #333333;
+    margin-bottom: 0;
+ }
+
+.siteFooter{
+    background-color: #333333;
+    font-size: 20px;
+    padding-bottom: 0px;
+    color: white;
+    width: 70%;
+    padding:1% 38%;
+    text-align: left;
+
+}
+
+.footerLogo{
+    position: absolute;
+    left:12%;
+}

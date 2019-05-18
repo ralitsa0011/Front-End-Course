@@ -1,0 +1,147 @@
+body{
+    background-color: #000;
+    margin:0;
+    padding: 0;
+    font-family: 'Brandon Grotesque','brandon-grotesque-n5','brandon-grotesque',Helvetica,sans-serif;
+    overflow-x: hidden;
+}
+
+.mainArticle{
+    font-size: 14px;
+    width: 50%;
+    display: inline-block;
+    margin-left:180px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+h1{
+    font-size: 54px;
+    font-family: 'Brandon Grotesque','brandon-grotesque-n5','brandon-grotesque',Helvetica,sans-serif;
+    font-weight: 500;
+    line-height: 0.3;
+}
+
+.mainImage{
+    margin-top:80px;
+}
+
+.container {
+    text-align: left;
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'brandon-grotesque';
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.column {
+    column-count: 2;
+    line-height: 25px;
+}
+
+.dash{
+    border: 0 none;
+    border-top: 1px dashed #A9A9A9;
+    background: none;
+    height:0;
+} 
+
+.imgFalcon{
+    float:right;
+    margin-right: 340px;
+    margin-top: 35px;
+}
+
+.rightNav{
+    padding: 3px 20px;
+    padding-left: 3px;
+    border-radius: 4px;
+    background: #21272b;
+    color: #cccccc;
+    width: 225px;
+    position: absolute;
+    top: 633px;
+    left: 1046px;
+    font-size: 14px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.gap{
+    border: 0 none;
+    border-top: 2px solid #000;
+    background: none;
+    height:0;
+    margin-left: -45px;
+    width:300px
+}
+
+.menu {
+    list-style-type: none;
+    padding-top: 300px;
+}
+
+.menu .arrowYouTube {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.menu a {
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    display: inline-block;
+    background: url("../images/download.png") no-repeat;
+    background-position: 0px -55px;
+}
+
+.close {
+    height: 21px;
+    width: 21px;
+    line-height: 50px;
+    display: inline-block;
+    background: url("../images/download.png") no-repeat;
+    background-position: 0px -11px;
+    margin-left: 800px;
+}
+
+#modalWindow {
+    position: fixed;
+    font-family: arial, helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms linear;
+    pointer-events: none;
+}
+
+#modalWindow:target {
+    opacity: 2;
+    pointer-events: auto;
+}
+
+#modalWindow>div {
+    width: 400px;
+    height: 240px;
+    position: relative;
+    margin: 30px 300px;
+    padding: 0px 0px 0px 0px;
+}
