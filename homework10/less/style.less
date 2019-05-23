@@ -1,0 +1,255 @@
+@mainFont: "Helvetica", "sans-serif";
+@mainBackroundColor: darken(hsl(90, 10%, 30%), 40%);
+@mainTextColor: #fff;
+@extraColor: greyscale(hsl(90, 90%, 30%));
+
+.mainPosition(){
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+.linksHover() {
+    text-decoration: none;
+    border-bottom: 2px solid @mainTextColor;
+}
+
+/* header of page */
+.mainPageHeader{
+    background-color: @mainBackroundColor;
+    position: absolute;
+    height:80px;
+    .mainPosition();
+}
+
+.siteHeader{
+    background-color: @mainBackroundColor;
+    width: 70%;
+    padding:0 27%;
+    text-align: left;
+
+    div{
+        display: inline-block;
+    }
+
+    a{
+        color: @mainTextColor;
+        text-decoration: none;
+        font-family: @mainFont;
+    }
+
+    a:hover {
+        .linksHover();
+    }
+}
+
+.logo{
+    position: absolute;
+    left:12%;
+    top:23px;
+}
+
+.headerLink{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.smallHeaders{
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+    margin-right: 150px;
+    padding: 0; 
+
+    a{
+        color: @extraColor;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid @extraColor;
+    }
+}
+
+#openTab{
+    .linksHover();
+}
+
+#shop a{
+    border-radius: 16px;
+    border: 4px solid @extraColor;
+    padding: 5px 7px;
+    background-color: @mainBackroundColor;
+
+    &:hover{
+        box-shadow: 0 0 4px 2px @mainTextColor inset;
+    }
+}
+
+/* body */
+body{
+    background-color: @mainBackroundColor;
+    margin:0;
+    padding: 0;
+    font-family: @mainFont;
+    overflow-x: hidden;
+}
+
+.mainArticle{
+    font-size: 14px; 
+    width: 50%;
+    display: inline-block;
+    margin-left:180px;
+    margin-bottom: 40px;
+    color: @mainTextColor;
+}
+
+h1{
+    font-size: 54px;
+    font-family: @mainFont;
+    font-weight: 500;
+    line-height: 0.3;
+}
+
+.mainImage{
+    margin-top:80px;
+}
+
+.container {
+    text-align: left;
+    color: @mainTextColor;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: @mainFont;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.column {
+    column-count: 2;
+    line-height: 25px;
+}
+
+.dash{
+    border: 0 none;
+    border-top: 1px dashed #A9A9A9;
+    background: none;
+    height:0;
+} 
+
+.imgFalcon{
+    float:right;
+    margin-right: 340px;
+    margin-top: 35px;
+}
+
+.rightNav{
+    padding: 3px 20px;
+    padding-left: 3px;
+    border-radius: 4px;
+    background: @extraColor;
+    color: @mainTextColor;
+    width: 225px;
+    position: absolute;
+    top: 633px;
+    left: 1046px;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        margin-bottom: 12px;
+    }
+}
+
+.gap{
+    border: 0 none;
+    border-top: 2px solid @mainBackroundColor;
+    background: none;
+    height:0;
+    margin-left: -45px;
+    width:300px
+}
+
+.menu {
+    list-style-type: none;
+    padding-top: 300px;
+    
+    .arrowYouTube {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    a {
+        height: 60px;
+        width: 60px;
+        line-height: 50px;
+        display: inline-block;
+        background: url("../images/download.png") no-repeat;
+        background-position: 0px -55px;
+    }
+}
+
+.close {
+    height: 21px;
+    width: 21px;
+    line-height: 50px;
+    display: inline-block;
+    background: url("../images/download.png") no-repeat;
+    background-position: 0px -11px;
+    margin-left: 800px;
+}
+
+#modalWindow {
+    position: fixed;
+    font-family: @mainFont;
+    right: 0;
+    bottom: 0;
+    .mainPosition();
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms linear;
+    pointer-events: none;
+    
+    &:target {
+        opacity: 2;
+        pointer-events: auto;
+    }
+
+    & > div {
+        width: 400px;
+        height: 240px;
+        position: relative;
+        margin: 30px 300px;
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+/* footer */
+.siteFooter{
+    background-color: @extraColor;
+    font-size: 20px;
+    padding-bottom: 0px;
+    color: @mainTextColor;
+    width: 70%;
+    padding:1% 38%;
+    text-align: left;
+
+}
+
+.footerLogo{
+    position: absolute;
+    left:12%;
+}
