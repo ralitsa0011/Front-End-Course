@@ -1,0 +1,18 @@
+body{
+    background-color: #000;
+}
+
+.mainImg {
+    width: 50px;
+    height: 100px;
+    position: relative;
+    animation: myMove 3s 18 ease;
+    top: 400px;
+    left: 0px;
+}
+
+@keyframes myMove {
+    0% {top: 400px; left: 0px;}
+    50% {top: 400px; left: 600px;}
+    100% {top: -200px; left: 800px;}
+}
